@@ -40,13 +40,14 @@ print("he3=", he3)
 i3=((h3[0]*0.7)+(h3[0]*0.25)+(he3*1*10**(-3)))/(800)
 print("I3=", i3)
 #---------------Graficas-----------------
-fig, [[ax1, ax2], [ax3, ax4]] = plt.subplots(nrows=2, ncols=2, constrained_layout=True)
-ax1.plot(h,b)
-ax1.plot(h1,b1, marker="o", color="red")
-ax2.plot(h,b)
-ax2.plot(h2,b2, marker="o", color="red")
-ax3.plot(h,b)
-ax3.plot(h3,b3, marker="o", color="red")
-ax4.plot(h,b)
+plt.plot(h,b)
+plt.plot(h1,b1, "ro", label= "\u03a6 = 1mWb")
+plt.plot(h2,b2, "yo", label= "\u03a6 = 5mWb")
+plt.plot(h3,b3, "go", label= "\u03a6 = 6.5mWb")
+plt.xlabel("H")
+plt.ylabel("B")
+plt.legend()
 plt.show()
+
+
 

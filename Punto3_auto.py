@@ -1,9 +1,7 @@
-import numpy as np
-import matplotlib.pyplot as plt
 from sympy.solvers import solve
 from sympy import Symbol
 from scipy import constants as c
-ur=200 # permitividad relatividad, variable de entrada
+ur= float(input("Digite un valor de permitividad inicial: ")) # permitividad relatividad, variable de entrada
 u=ur*c.mu_0
 x = Symbol('x')
 h1=solve((((2*10**(-3)))/(1+(10**(-3)*x))-u))
